@@ -1,0 +1,22 @@
+/*설정 초기화*/
+* {
+  margin:0px; padding: 0px; box-sizing: border-box;
+}
+/*바디_검은색 배경에 하얀 글씨*/
+body {
+  background-color: black;
+  color: white;
+}
+/*defalt font*/
+.master_font {
+  font-size: 11px;
+}
+/*헤더*/
+.header a {
+  text-decoration: none;
+  color: white;
+}
+.nav_li {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

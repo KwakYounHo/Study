@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML로 만드는 메모장</title>
+    <link rel="stylesheet" href="masterfont.css">
+    <style>
+      .zumzul {
+        border-style: dashed;
+        height: 0px;
+      }
+      .age {
+        font-size: 35px;
+        margin: auto 5px;
+      }
+      .title {
+       font-size: 50px;
+      }
+      .li_table {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main_page">
+      <h1 class="title size_article">Vroom의 기대이론</h1>
+      <hr align="left" class="size_article" style="border-style:dotted; height:0px; margin-bottom: 35px;">
+      <div class="master_font border_1 size_article">
+        <article id="5-8">
+          <h2 class="age">5-8</h2>
+          <hr class="zumzul">
+          <p>
+            OO가 열심히 뭔가 하게 만드는 법 세 가지<br>
+            열심히 하면 내가 얻는 것 들
+          </p>
+        </article>
+      </div><br>
+      <div class="master_font border_1 size_article">
+        <article id="9-14">
+          <h2 class="age">9-14</h2>
+          <hr class="zumzul">
+          <h3>브룸의 기대 이론</h3>
+          <p>
+            <ul>
+              <li>기대감</li>
+                <p>내가 열심히 하면 좋은 결과가 나올 것이다.</p>
+              <li>수단성</li>
+                <p>좋은 성과가 나오면 좋은 보상을 받을 것이다.</p>
+              <li>유의성</li>
+                <p>보상에 대한 개인적인 가치.<br>
+                  좋으면 + 나쁘면 -
+                </p>
+            </ul>
+          </p>
+        </article>
+      </div><br>
+      <div class="master_font border_1 size_article">
+        <article id="15-19">
+          <h2 class="age">15-19</h2>
+          <hr class="zumzul">
+          <h3>닥터브룸</h3>
+          <p>캐나다의 심리학자. 산업 및 조직 심리학에서 구성원의 동기를 설명하는 주요 이론으로 많은 영향을 미쳤다.<br><br>
+          브룸의 기대 이론 - 사람이 어떤 심리적 과정을 거쳐 동기부여가 형성 되는지에 관한 연구 이론
+          </p>
+          <hr>
+          <p>
+            <ul>
+              <li>기대감</li>
+                <p>
+                  나의 노력 : 특정한 성과 or 업적으로 이어질 가능성을 의미<br>
+                  <u>주관적인 생각(자신이 노력하면 성과를 얻어낼 수 있을 것이라고 믿는 주관적 확률의 정도)</u>
+                  <br>
+                  수치상으로 0(실현 불가능)~1(확실하게 가능)까지의 값이 존재한다.<br>
+                  <ul>
+                    <li>특정한 일을 잘할 수 있다는 믿음이 높을수록</li>
+                    <li>난이도가 낮은 일일수록</li>
+                    <li>자신의 운명은 자신이 결정한다고 믿는(내재론자)일 수록</li>
+                  </ul>
+                  기대값이 커진다.
+                </p>
+              <li>수단성</li>
+                <p>
+                  업적과 보상 간의 상관성을 의미한다.<br>
+                  수치상으로는 -1~1까지 값이 존재한다.<br>
+                  (열심히 노력한 성과가 자기가 바라는 보상을 얻는 데 어느 정도 도움이 되는가 에 관한 믿음의 정도)<br>
+                  <u>＃어떤 일에 노력을 한다는 것은 원하는 결과를 얻기 위한 것 으로 그 노력이 곧 원하는 결과를 얻기 위한 도구이며 수단인 것 이다.</u>
+                  <ul>
+                    <li>업적=보상 > 비례하면 값은 1에 가까워진다.</li>
+                    <li>그렇지 않다면 -1에 가까워진다.</li>
+                  </ul>
+                </p>
+              <li>유의성</li>
+                <p>
+                  <u>보상에 대한 개인이 평가하는 주관적인 중요성 정도</u><br>
+                  수치상으로는 -1~1까지 값이 존재한다.
+                </p>
+            </ul><hr>
+            <table class="li_table" border="1" style="border-collapse:collapse">
+              <tr>
+                <th>개인 노력</th>
+                <th>개인 성과(1차 결과)</th>
+                <th>조직 보상(2차 결과)</th>
+                <th>개인 목표</th>
+              </tr>
+            </table>
+            <span style="margin-left:55px;">
+              ↑
+            </span>
+            <span style="margin-left:95px;">
+              ↑
+            </span>
+            <span style="margin-left:96px;">
+              ↑
+            </span><br>
+            <span style="margin-left:15px; display:inline-block;">
+              <li>
+                노력-성과 관계
+              </li>
+            </span>
+            <span style="margin-left:3px; display:inline-block;">
+              <li>
+                성과-보상 관계
+              </li>
+            </span>
+            <span style="margin-left:1px; display:inline-block;">
+              <li>
+                보상·개인목표 관계
+              </li>
+            </span>
+          </p>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

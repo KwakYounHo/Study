@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position 연습</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    #root {
+      width: 100vw;
+      height: 3000px;
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: flex-start;
+      
+      /* 포지션 */
+      /* position: relative; */
+      /* top: 50px; */
+      /* left: 50px; */
+    }
+
+    /* item에 크기 지정 */
+    #root > div {
+      width: 100px;
+      height: 100px;
+      
+    }
+
+    /* 구분을 위한 색 지정 */
+    #item_1 {
+      background-color: darkblue;
+    }
+    #item_2 {
+      background-color: violet;
+      /* 포지션 적용 */
+      /* position: fixed; */
+      /* bottom: 50px; */
+      /* right: 50px; */
+      /* 남용하면 유지보수가 매우 어렵습니다.
+         극단적으로 코드 양이 매우 많다고 생각해 보십시오. */
+    }
+    #item_3 {
+      background-color: magenta;
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+}
+    #item_4 {background-color: tan;}
+  </style>
+</head>
+<body>
+  <!-- <p>동기야 부모 컨테이너는 아이디 값이 'root'이야, 자식으로는 div이 4개 있고 div마다 id는 순차적으로 item_$으로 만들어 주었으면 좋겠어</p> -->
+  <!-- 위 글을 만드려면 div#root>div#item_$*4 -->
+  <div id="root">
+    <div id="item_1"></div>
+    <div id="item_2"></div>
+    <div id="item_3"></div>
+    <div id="item_4"></div>
+  </div>
+</body>
+</html>

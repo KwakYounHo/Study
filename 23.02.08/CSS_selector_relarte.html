@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>관계를 이용 그리고 변수</title>
+  <style>
+    :root {
+      --mainlogocolor : green;
+      --mainwidth : 500px;
+      --mainheight : 100px;
+      --subcolor: rgb(255, 236, 202);
+      --mainfont: 11px;
+    }
+    body {
+      font-size: var(--mainfont);
+    }
+    body > div > ul {
+      background-color:var(--mainlogocolor);
+      width: 100px;
+      height: 100px;
+    }
+    body > div > h1 {
+      background-color: var(--mainlogocolor);
+      font-size: 3rem;
+    }
+    body > div:nth-child(3) {
+      width: var(--mainwidth);
+      height: var(--mainheight);
+      background-color: var(--subcolor);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>TITLE</h1>
+  </div>
+  <div>
+    <!--ul>li{items_$}*5-->
+    <ul>
+      <li>items_1</li>
+      <li>items_2</li>
+      <li>items_3</li>
+      <li>items_4</li>
+      <li>items_5</li>
+    </ul>
+  </div>
+  <div></div>
+</body>
+</html>

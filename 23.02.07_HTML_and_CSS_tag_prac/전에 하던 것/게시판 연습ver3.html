@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>게시판 연습</title>
+        <style>
+            #header-wrap {
+                border-bottom: 1px solid rgba(231, 231, 231, 0.863);
+                height:75px;
+                background-color: rgb(253, 231, 197);
+                }
+                body {
+                    background-color: black;
+                    color:white;
+                }
+                ul {
+                    padding-left:5px;
+                    list-style-type: none;
+                }
+                a {
+                    text-decoration:none;
+                    color:white;
+                }
+                h1 {
+                    margin-bottom:0px;
+                }
+                hr {
+                    /*margin-top:0px;*/
+                    background-color:rgb(107, 107, 107);
+                    height:2px;
+                    border:0px;
+                }
+                #page-box {
+                    display: block;
+                    width:500px;
+                    height:auto;
+                    margin:0 auto;
+                }
+                .article-box {
+                    width:485px;
+                    /*background:linear-gradient(120deg,rgba(255, 229, 195, 0.459),rgba(193, 197, 255, 0.308));*/
+                    padding:1px;
+                    margin:8px;
+                    margin-left:0px;
+                }
+                .article-box article {
+                    width:auto;
+                }
+                .C_table {
+                    border:1px dotted rgba(255, 255, 255, 0.568);
+                    border-width:2px;
+                    padding:7px;
+                }
+                .C_table th {
+                    text-align: left;
+                    width:500px;
+                    font-size:12px;
+                }
+                .C_table td {
+                    text-align: right;
+                    font-size:12px;
+                }
+                .C_table caption {
+                    font-size:14px;
+                    /*margin-bottom:5px;*/
+                    border-bottom:solid 1px rgb(107,107,107);
+                    padding-bottom:5px;
+                }
+                .H_N, ul,li {
+                    display: inline-block;
+                }
+                .cate a {
+                    font-size: 25px;
+                    padding: 0px 7px;
+                }
+                .cate {
+                    position: relative;
+                    bottom:15px;
+                    /* left: 500px; */
+                }
+            </style>
+        </head>
+        <body>
+            <!--헤더 네비게이션-->
+            <header>
+                <div id="header-wrap">
+                    <span class="logo">
+                        <a href="연습메모장.html">
+                            <img src="./image/Logo.png" alt="">
+                        </a>
+                    </span>
+                    <nav class="H_N">
+                        <div class="cate">
+                            <ul>
+                                <li>
+                                    <a href="http://www.naver.com" target="_blank">
+                                        네이버
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.notion.com" target="_blank">
+                                        노션
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.google.com" target="_blank">
+                                        구글
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.daum.net" target="_blank">
+                                        다음
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!--본문의 최상단-->
+            <div id="page-box">
+                <h1>
+                    게시판
+                </h1><hr/>
+                <!--본문 영역(기사)-->
+                <div id="article" align="center">
+                    <div class="article-box">
+                        <article>
+                            <!--게시글 제목-->
+                            <h2 style="text-align:left; margin:0px; margin:7px; font-size: 27px;">
+                                Lorem ipsum dolor sit amet.
+                            </h1>
+                            <hr style="border:dashed 1px; border-color:rgb(107, 107, 107); height:0px; width:470px; background-color:rgba(255, 255, 255, 0); margin-top: 15px; margin-bottom: 15px;">
+                            <!--본문-->
+                            <p style="text-align:left; margin:10px;">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, provident fuga atque tempora excepturi quia laboriosam, sit laborum a voluptates iusto, ea rem aspernatur inventore tenetur veniam. Et, cupiditate enim quisquam quo tempora iure ducimus! Vitae, sit? Nam nisi aliquam quaerat, ducimus corrupti deserunt fugiat consectetur reprehenderit culpa tempore quam!
+                            </p>
+                        </article>
+                    </div>
+                    <hr/>
+                    <!--다른 게시물-->
+                    <div class="C_table">
+                        <table>
+                            <caption style="text-align:left;">게시판의 다른 게시물</caption>
+                            <tr>
+                                <th><a href="연습메모장.html">가나다라마바사(연습페이지)</a></th>
+                                <td>2023.02.03</td>
+                            </tr>
+                            <tr>    
+                                <th><a href="">아자차카타파하(접근 시도 할 때 로그인을 필요로 함)</a></th>
+                                <td>2023.02.02</td>
+                            </tr>
+                            <tr>
+                                <th><a href="">기억니은디귿리을</a></th>
+                                <td>2023.02.01</td>
+                            </tr>
+                            <tr>
+                                <th><a href="">미음비읍시옷이응</a></th>
+                                <td>2023.01.31</td>
+                            </tr>
+                            </ul>
+                        </table>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eum accusantium ab minima deleniti praesentium porro unde et, consequatur eveniet sequi similique. Consequuntur voluptatum culpa, perspiciatis similique natus aliquam quam facilis asperiores exercitationem laborum dolor officiis maiores possimus expedita rerum, cumque corrupti tempora eum, illo soluta neque. Molestiae, esse aliquam. Officiis iure, quae autem reprehenderit recusandae ex consequatur doloremque dicta distinctio! Aliquid, at maiores sunt aut, labore excepturi fuga eos magnam non nulla facere modi doloremque fugiat. Blanditiis, et ratione aspernatur odit beatae hic! Blanditiis unde a aperiam tempore, explicabo cum quos velit maxime reiciendis molestias saepe ut quisquam minima autem asperiores perferendis facere fugit? Deleniti ex cupiditate nam quae repellat quam non incidunt obcaecati fuga libero explicabo at qui quibusdam ratione possimus laudantium doloremque voluptatum voluptas nemo, numquam sapiente sit. Itaque laborum excepturi nulla mollitia, dolores debitis quasi quae cumque consectetur? Recusandae numquam, doloribus magni veniam perferendis eum ut, dolor iusto commodi quod esse. Consequuntur illo consequatur placeat commodi temporibus, exercitationem dolore qui veritatis neque expedita optio totam molestiae autem. Dolorum omnis cupiditate praesentium sed aperiam enim eveniet aliquam a amet, id maiores magnam accusamus incidunt, quas facilis, placeat doloribus maxime! Nisi non perspiciatis, illo voluptate et animi nemo provident minus neque consequatur voluptates reprehenderit numquam quidem nobis dicta ullam quod excepturi alias, sequi iste porro nesciunt ut dolores architecto. Debitis possimus nam odit laudantium, similique cum facere nemo, voluptas labore incidunt amet reiciendis ratione quia eum quod nihil cupiditate! Rem vero sit sint aut doloribus asperiores, ratione rerum officiis? Sint sunt animi eos veritatis illo, consectetur ab, hic quo est similique maxime expedita sapiente pariatur blanditiis nihil impedit dolore reprehenderit ipsa aliquid voluptatibus officiis cumque! Est maiores consequuntur facere quod aspernatur repellendus doloremque asperiores, praesentium debitis odit. Eligendi nostrum eveniet obcaecati voluptatem qui deserunt velit reiciendis fuga veniam pariatur alias totam placeat, iure porro expedita animi delectus possimus distinctio ducimus ex accusantium vero neque! Quis nesciunt eaque expedita, veniam perspiciatis odit, quia perferendis esse enim voluptatibus placeat possimus blanditiis qui voluptatem maiores beatae minima hic ipsam tenetur optio totam consectetur voluptas velit sint. Voluptas, architecto quod ipsa quisquam at eum ab nisi quo ullam aperiam dolorem necessitatibus quae quas laborum cumque sequi nostrum vel tempora non delectus ex cupiditate. Odio ullam praesentium autem iusto deleniti ipsum velit rem maxime cum officiis. Accusantium iste, impedit ipsa magni accusamus nulla dolore eum sunt dolor nihil eligendi ad, quod, ducimus repellat maiores consectetur vitae est! Quis porro voluptate aperiam fuga, id hic minus veniam, ullam praesentium autem quod temporibus necessitatibus sunt minima cum voluptatum recusandae velit? Dolorum ab pariatur eligendi modi facere deleniti mollitia voluptates, sed incidunt cumque nostrum, placeat fugiat ea ipsam accusamus. Commodi, facilis, nam temporibus beatae esse dignissimos officiis reiciendis sint rem nihil qui quaerat culpa accusamus eos distinctio animi nulla ab eum possimus accusantium saepe ducimus hic aut at. Exercitationem, neque voluptate! Possimus hic, illum velit beatae ullam saepe pariatur quam nihil quas eius, doloremque odit porro, fugit quia obcaecati laboriosam officiis vel sapiente totam ut voluptates? Ducimus cum perferendis quis optio ea hic porro quam iste molestias quas, dignissimos recusandae modi nobis sint facere laboriosam quibusdam? Officiis laudantium iste molestias quibusdam quod doloribus consequatur voluptate, esse atque vero voluptatum inventore ea cupiditate labore. Placeat eius delectus non beatae quis sunt saepe omnis, earum quibusdam aliquam nostrum. Officiis voluptatibus officia ut architecto quaerat error magnam odio cum modi necessitatibus nisi culpa labore esse facilis corrupti, laborum atque vero obcaecati voluptatem ad ipsum nesciunt! Accusamus corporis iste illum doloribus eos eaque enim quaerat, temporibus sint ex non sequi provident tenetur ipsum sunt similique laboriosam nulla odio eligendi esse voluptatibus assumenda animi quis placeat. Atque esse quia veritatis impedit ut necessitatibus, blanditiis ipsa inventore unde consequuntur possimus et iste assumenda sequi natus fuga in molestiae repellendus expedita aperiam doloremque. Impedit placeat, vitae pariatur ipsam nostrum libero eius, harum ex cupiditate sed reiciendis eveniet. Architecto molestiae provident delectus atque inventore autem, quaerat magni veniam ullam. Nulla, expedita laudantium. Aperiam assumenda ad dolor recusandae. Delectus qui eius aliquid labore illum fugiat ipsa magnam odio molestias fugit hic dolor quaerat quam assumenda eaque dignissimos rerum ab, laborum beatae praesentium? Dolore neque reprehenderit ab veniam officiis optio nihil. Minima, reprehenderit blanditiis quis soluta iure explicabo, harum voluptatum fuga neque quibusdam, nemo corrupti laborum recusandae repellendus. Fugiat aliquam nulla officiis totam? Ipsa, iste veritatis, nostrum adipisci laborum numquam dolorem quisquam vero quaerat impedit pariatur laudantium nam minima vitae accusamus aperiam! Fugiat quo atque recusandae repellendus aspernatur, non obcaecati? Laborum neque optio culpa ea facilis qui doloribus in veniam maiores fugiat nulla voluptatibus necessitatibus eligendi provident assumenda minus mollitia totam aperiam, inventore hic? Labore repellendus laborum iure a. Illum, mollitia porro. Quod debitis et nobis quisquam, odit pariatur. Qui incidunt natus enim? Illum qui ab earum fugit quia iste quasi soluta at quibusdam temporibus sed magnam, dignissimos recusandae consequuntur officiis numquam rem, ratione quo id error sunt excepturi. Facilis, expedita molestias dignissimos reprehenderit doloribus ad laboriosam aperiam dolorum, est eveniet necessitatibus sit molestiae voluptatum dolor, unde cumque dicta nisi eos nulla mollitia! Ad magnam itaque iusto quasi omnis numquam reprehenderit nihil voluptatem voluptates, fugiat repudiandae ut quisquam reiciendis eaque earum, id nobis tempora iure ipsum dolorem. Cupiditate, asperiores veritatis consectetur distinctio aut quasi tenetur non cumque minus eligendi dolores enim officia molestias corrupti eveniet veniam magni placeat sequi id quam commodi saepe nesciunt delectus dolore! Nulla, a ex quod nemo quaerat, sint nisi debitis molestias distinctio facilis quas reprehenderit vel, accusamus temporibus nesciunt alias ea ad recusandae. Maxime dolores saepe suscipit quo dignissimos vitae minima dolorum voluptas non magnam reiciendis dolorem repudiandae, accusamus quaerat, consectetur voluptate a quidem sit cumque fugit quas mollitia odit. Eveniet, voluptates totam a dolore excepturi dolores libero quidem, officiis laborum placeat dignissimos minima maxime consectetur. Blanditiis ab dolorum eos. Aut perferendis optio saepe ducimus ipsam, eius ad molestias praesentium architecto. Perspiciatis corrupti, nam sapiente repudiandae ea quaerat, optio beatae aspernatur vero rem cumque sint iure quia explicabo odio quos maxime inventore cum praesentium! Sequi, eveniet hic minima fugiat quis libero?
+                </p>
+            </div>
+        </body>
+    </html>

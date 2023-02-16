@@ -1,0 +1,57 @@
+/* 헤더 페이지 머리에 붙이기 */
+header {
+  position: sticky;
+  top:0;
+}
+
+/* 헤더 컨테이너 */
+.header_wrap {
+  display: flex;
+  border-bottom: 1px solid var(--col_w);
+  align-items: center;
+  padding:1em 2em;
+  background-color: var(--col_b);
+}
+
+/* 로고(왼쪽) */
+.logo {
+  width:40%
+}
+
+/* 홈페이지 타이틀(중앙) */
+.header_title {
+  font-weight:bold;
+  font-size: 2rem;
+  width:20%;
+  display: inherit;
+  justify-content: center;
+}
+
+/* 북마크(오른쪽) */
+header .nav {
+  font-weight: bold;
+  font-size: var(--mas_f);
+  letter-spacing: var(--mas_s);
+}
+header .nav_li {
+  width:40%;
+  display: inherit;
+  justify-content: flex-end;
+}
+header .nav_li_wrap {
+  font-size: 0.9em;
+  border: 1px solid var(--col_w);
+  border-radius:0.5em;
+  padding: 7px;
+
+}
+header .nav_li ul {
+  display: flex;
+  justify-content: center;
+  gap:1em;
+}
+header .nav_li li {
+  display: inherit;
+  list-style: none;
+  font-size: 0.7rem;
+}

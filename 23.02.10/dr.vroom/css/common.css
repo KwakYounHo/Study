@@ -1,0 +1,23 @@
+/* 사이트 공통 */
+:root {
+  --mas_f: 11px;
+  --mas_s: -1px;
+  --col_w: white;
+  --col_b: black;
+}
+body {
+  background-color: var(--col_b);
+  color: var(--col_w);
+}
+
+/* 설정 초기화 */
+* {
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+  color: var(--col_w)
+}

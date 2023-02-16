@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initiol-scale=1.0">
+    <style>
+      :root {
+        --master_font: 11px;
+        --master_spacing: 0.2em;
+      }
+      /*설정 초기화*/
+      * {
+        margin:0px; padding: 0px; box-sizing: border-box;
+      }
+      /*바디_검은색 배경에 하얀 글씨*/
+      body {
+        background-color: black;
+        color: white;
+      }
+      /*헤더*/
+      .header_wrap {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        align-items: center;
+      }
+      .header_wrap a {
+        text-decoration: none;
+        color: white;
+      }
+      .header_title {
+        font-weight:bold;
+        font-size: 2rem;
+      }
+      header .nav {
+        font-weight: bold;
+        font-size: var(--master_font);
+        letter-spacing: var(--master_spacing);
+      }
+      header .nav_li {
+        display: flex;
+        font-size: 0.9em;
+      }
+      header .nav_li li {
+        list-style: none;
+        display: inline;
+      }
+      /*네비*/
+      nav {
+        display: flex;
+        justify-content:center;
+        text-align: center;
+        border: 1px solid white;
+        border-radius:1em;
+        margin: 0.5em auto;
+      }
+      nav > div {
+        border:1px solid black;
+        width: 125px;
+        height: 40px;
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+      }
+      nav span {
+        font-size: 0.7em;
+        align-items: center;
+      }
+      /*메인*/
+      main {
+        display: flex;
+        justify-content:center;
+        gap:0.2em;
+        padding:1em;
+        border: 1px solid white;
+        border-radius:0.5em;
+      }
+      .main_1 {
+        width: 170px;
+        height: 300px;
+        border:1px solid black;
+        border-radius:0.5em;
+        padding:1%;
+        border: 1px solid white;
+        border-radius: 0.2em;
+      }
+      .main_2 {
+        width: 50vw;
+        min-width: 450px;
+        /*height: 500px;*/
+        border: 1px solid black;
+        border-radius:0.5em;
+        padding:2%;
+        border: 1px solid white;
+        border-radius: 0.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="header_wrap">
+          <span class="logo">
+            <a href="#">
+              <img src="./image/Logo.png" alt="이게 안나오면 안되는데">
+            </a>
+          </span>
+          <span class="header_title">
+            <a href="#">
+              <span>PRACTICE</span>
+            </a>
+          </span>
+          <div class="nav_li">
+            <ul>
+              <li>
+                <a href="http://www.naver.com" target="_blank">
+                  <span>네이버</span>
+                </a>
+                </li>
+              <li>
+                <a href="http://www.kakaocorp.com" target="_blank">
+                  <span>카카오</span>
+                </a>
+                </li>
+              <li>
+                <a href="http://www.cupang.com" target="_blank">
+                  <span>쿠팡</span>
+                </a>
+                </li>
+              <li>
+                <a href="http://www.daangn.com" target="_blank">
+                  <span>당근마켓</span>
+                </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </header>
+    <nav>
+      <div class="nav_button_1">
+        <a href="Vroom" alt="이 글이 보인다면 새로고침을 해 주세요">
+          <span>Vroom의 기대이론</span>
+        </a>
+      </div>
+      <div class="nav_button_2">
+        <span>button2</span>
+      </div>
+      <div class="nav_button_3">
+        <span>button3</span>
+      </div>
+      <div class="nav_button_4">
+        <span>button4</span>
+      </div>
+      <div class="nav_button_5">
+        <span>button5</span>
+      </div>
+    </nav>
+    <main>
+      <div class="main_1">
+        <h1>main_1</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, excepturi nisi? Obcaecati animi, similique labore quos suscipit dolorum minus minima!</p>
+      </div>
+      <div class="main_2">
+        <h1>main_2</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, commodi ad odit iusto nihil ut! Tempore ea reiciendis voluptate vero dolorum minima, maxime laborum voluptatum magnam nesciunt pariatur? Voluptate nostrum dolores harum libero dolor eos quisquam saepe deserunt vero sapiente. In, hic, fugiat aut iure impedit voluptate earum sit quo necessitatibus, mollitia aspernatur tenetur ea ducimus quaerat voluptatibus accusamus. Voluptatum tempore nesciunt possimus vero placeat numquam ea quisquam omnis facilis, maxime fuga nisi accusantium ex porro, rerum dolorum eius ullam! Porro enim quo qui ad. Inventore ipsum nesciunt eos nobis vero nostrum necessitatibus doloremque eveniet voluptate repudiandae odio placeat quod fuga qui iure quisquam debitis architecto optio, beatae tempora ea similique sequi laboriosam explicabo? Quia sint atque recusandae quod, non consequuntur obcaecati repellendus impedit optio cum, ipsa repellat tempora harum, magnam amet. Dolor minima voluptatum, beatae non sint quibusdam atque earum qui officiis rerum odio. Officiis, maxime! Tenetur dignissimos adipisci accusantium atque voluptates, distinctio omnis corporis provident velit eaque dolore, repudiandae illum perspiciatis facere sint quibusdam recusandae nulla explicabo. A, voluptatem perferendis, vel provident illo deserunt qui sint error nihil sequi consequatur doloribus molestias accusantium earum in cumque. Perspiciatis autem, praesentium soluta error nisi laborum mollitia nulla quos laboriosam vero labore illum id ex debitis omnis odio impedit alias ullam fugiat consequatur cum! Amet perferendis aspernatur nesciunt quaerat omnis tempore rerum magnam quisquam corrupti eos maiores esse nulla at, illum tempora cumque quae eveniet a labore fugit voluptatibus commodi dolore deleniti? Sequi ducimus blanditiis exercitationem! Suscipit quod recusandae dignissimos tempore omnis consectetur. Veniam excepturi quos provident aliquid minus aliquam animi nostrum exercitationem nam consectetur reprehenderit laboriosam, necessitatibus inventore nobis dolore? Provident id, natus at velit, excepturi iste molestias eligendi laborum tenetur sapiente omnis dignissimos ea illo! Sequi eos sit expedita debitis, sed ullam rerum veritatis, incidunt officia recusandae numquam deserunt iste dicta ratione! Consequuntur tempore praesentium ratione quam accusamus omnis debitis officia ab animi! Delectus, sit non tempora ex, debitis cum harum id corrupti illum eligendi, dignissimos minus pariatur explicabo. Cumque, tenetur nemo! Minima excepturi labore sunt a id cumque obcaecati perspiciatis ut consectetur ad. Quia aut, temporibus aliquid odio atque aperiam consequatur dicta quasi quae enim, cumque soluta pariatur nemo! Nostrum reiciendis, adipisci iusto ullam nisi, officiis nam eveniet tempore eligendi error facere fugiat dolorum ratione natus doloribus accusantium! Nostrum autem, nisi ipsum fugit nesciunt, incidunt quae repudiandae sit hic dicta non eum dolorum velit enim vitae exercitationem amet pariatur necessitatibus nulla dolor! Voluptatem, reprehenderit odio veritatis dolorem dolorum perspiciatis, a sapiente repellendus accusamus quisquam voluptatibus molestiae architecto dignissimos iusto placeat praesentium, hic pariatur exercitationem eveniet vel fuga. Nisi dolor mollitia, consequuntur nobis ab, culpa nesciunt eaque amet quae eligendi neque harum assumenda nostrum eos eius sit, distinctio saepe. Tenetur nostrum iste saepe facere repudiandae. Laudantium officiis reprehenderit tenetur libero fuga cum, consectetur architecto facere eos nemo. Beatae, modi deleniti, tempore quibusdam cupiditate blanditiis recusandae perspiciatis iure mollitia nisi est doloremque voluptatibus aperiam eaque quasi. Distinctio pariatur beatae nemo explicabo aspernatur ut aliquid iste quisquam, aut corrupti voluptatum? Provident!
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_wrap">
+        <h1>이곳은 Footer입니다.</h1>
+      </div>
+    </footer>
+  </body>
+</html>

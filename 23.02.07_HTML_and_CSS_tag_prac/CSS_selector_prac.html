@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자 연습하기</title>
+    <link rel="stylesheet" href="masterfont.css">
+    <style>
+        .selector_test li > h1 {
+          color: red;
+        }
+        .selector_test th > h1 {
+          color: green;
+        }
+        #main_page .selector_test td > h1 {
+          color: blue;
+        }
+    </style>
+  </head>
+  <body> 
+    <div id="main_page">
+      <div class="master_font size_article selector_test border_1">
+        <ul>
+          <li>
+            <h1>가는 가다</h1>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <th>
+                  <h1>나는 나다</h1>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <h1>다는 다다</h1>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
