@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 자판기 -----------------------------
+  <div id="root">
+    <h1>자판기</h1>
+    <div>
+      <h2>밀키스 가격</h2>
+      <p>900</p>
+    </div>
+    <div>
+      <h2>코카콜라 가격</h2>
+      <p>2800</p>
+    </div>
+    <div>
+      <h2>조르기</h2>
+      <p>0</p>
+    </div>
+  </div>
+  --------------------------------------->
+
+  <!-- 기본적인 사칙연산 연습해 보기 -->
+  <div id="container">
+    <h1>경비</h1>
+    <form action="#" id="form">
+      <div>
+        <h2>1회 탑승 비용</h2>
+        <input type="text" name="pay" placeholder="1250">
+      </div>
+      <div>
+        <h2>하루에 탑승하는 양</h2>
+        <input type="text" name="how_much" placeholder="2">
+      </div>
+      <div>
+        <h2>1주일 수업 일 수</h2>
+        <input type="text" name="one_week_day" placeholder="5">
+      </div>
+      <div>
+        <h2>1달 수업 일 수</h2>
+        <input type="text" name="one_month_day" placeholder="20">
+      </div>
+      <br>
+      <input type="submit" value="계산">
+    </form>
+    <div>
+      <h2>총 비용</h2>
+      <span></span>
+    </div>
+  </div>
+
+
+  <script>
+    // 요소 파고들어가서 값 가져오기-------------------------
+    // let root= document.getElementById('root')
+    // let milk= root.children[1].children[1].textContent;
+    // let coke= root.children[2].children[1].textContent;
+    // console.log(coke-milk);
+    // ----------------------------------------------------
+
+    // data type & 데이터 타입------------------------------
+    // var a = 1;
+    // var b = 'sting';
+    // var c = {
+      // key : "value", 
+      // name : "윤호"
+    // };
+    // var d = [ 1, 2, 3, 4, 5 ];
+    // console.log(d[0]);
+    // ----------------------------------------------------
+
+    // 분석을 통한 발전을 추구합니다 ------------------------
+    // var root = document.getElementById('root');
+    // $('#root'); //제이쿼리 - 할당을 못 해요 코드는 짧은데 쓰질 못 해요
+    // console.dir(root);
+    
+    // 한 달은 버스 값이 얼마나 들지? -> 가장 기본 적인 접근? 연습? 방법---------
+    let question= document.getElementById('container').children[1];
+
+    
+    question.onsubmit=function() {
+      let pay = question.pay.value;
+      let how_much = question.how_much.value;
+      let one_week_day = question.one_week_day.value;
+      let one_month_day = question.one_month_day.value;
+      let pay_n = Number(pay);
+      let how_much_n = Number(how_much);
+      let one_week_day_n = Number(one_week_day);
+      let one_month_day_n = Number(one_month_day);
+      let total_month = pay_n*how_much_n*one_month_day_n;
+      let total_week = pay_n*how_much_n*one_week_day_n
+
+      let m_res = document.getElementById('container').children[2].children[1]
+      m_res.textContent = "한 달 : "+total_month+" 원"
+      return false;
+    };
+    
+
+  </script>
+</body>
+</html>

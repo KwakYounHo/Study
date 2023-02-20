@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자판기</title>
+</head>
+<body>
+  <div id="root">
+    <h1>3층 자판기</h1>
+    <div>
+      <h2>밀키스 가격</h2>
+      <p>900</p>
+    </div>
+    <div>
+      <h2>코카콜라 가격</h2>
+      <p>2800</p>
+    </div>
+    <div>
+      <h2>조르기</h2>
+      <p>0</p>
+    </div>
+  </div>
+  <script>
+
+    //완성---------------------------------------------------------------------
+    // let test0= document.getElementById('root').getElementsByTagName('p')[0];
+    // let test1= document.getElementById('root').getElementsByTagName('p')[1];
+    // let test2= document.getElementById('root').getElementsByTagName('p')[2];
+    // let milkiss= test0.textContent
+    // let coke= test1.textContent
+    // let wanjang= test2.textContent
+    // console.log(Math.abs(milkiss-coke-wanjang));
+    // -------------------------------------------------------------------------
+    
+    // 다른 방법 ----------------------------------------------------------------
+    let t= document.querySelector(' #root > :nth-child(2) > :nth-child(2) ');
+    let tt= document.querySelector(' #root > :nth-child(3) > p ');
+    let ttt= document.querySelector(' #root > :nth-child(4) > p ');
+    
+    let t1= t.textContent;
+    let t2= tt.textContent;
+    let t3= ttt.textContent;
+    
+    console.log(Math.abs(t1-t2-t3));
+    // ---------------------------------------------------------------------------
+  </script>
+</body>
+</html>
