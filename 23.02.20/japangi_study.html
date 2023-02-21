@@ -50,7 +50,6 @@
     </form>
     <div>
       <h2>총 비용</h2>
-      <span></span>
     </div>
   </div>
 
@@ -81,22 +80,29 @@
     
     // 한 달은 버스 값이 얼마나 들지? -> 가장 기본 적인 접근? 연습? 방법---------
     let question= document.getElementById('container').children[1];
-
     
     question.onsubmit=function() {
       let pay = question.pay.value;
       let how_much = question.how_much.value;
       let one_week_day = question.one_week_day.value;
       let one_month_day = question.one_month_day.value;
+      
       let pay_n = Number(pay);
       let how_much_n = Number(how_much);
       let one_week_day_n = Number(one_week_day);
       let one_month_day_n = Number(one_month_day);
+      
       let total_month = pay_n*how_much_n*one_month_day_n;
-      let total_week = pay_n*how_much_n*one_week_day_n
+      let total_week = pay_n*how_much_n*one_week_day_n;
 
-      let m_res = document.getElementById('container').children[2].children[1]
-      m_res.textContent = "한 달 : "+total_month+" 원"
+      let C_div_w = document.createElement('div');
+      C_div_w.textContent = "한 주 : "+total_week+" 원";
+      document.getElementById('container').children[2].appendChild(C_div_w);
+      
+      let C_div_m = document.createElement('div');
+      C_div_m.textContent = "한 달 : "+total_month+" 원";
+      document.getElementById('container').children[2].appendChild(C_div_m);
+            
       return false;
     };
     
