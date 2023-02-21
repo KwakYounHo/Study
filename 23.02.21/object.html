@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <id id="root"></id>
+  <script>
+    // 데이터 타입의 혼합------------------------------------------------------
+    // let numberVar = 10;
+    // let stringVar = "10";
+    // console.log(numberVar + stringVar);
+    //--------------------------------------------------------
+    
+
+    // 문자열의 조합------------------------------------------------------
+    // let name = "sung"
+    // let sentence = "안녕하세요" + "저는" + 20 + "살의" + name + "입니다.";
+    // console.log(sentence)
+    //--------------------------------------------------------
+    
+
+    // 배열------------------------------------------------------
+    // let kim = "김씨_1"
+    // let kim = "김씨_2" // 이를 해결하기 위해서 객체가 등장했다!
+    
+    // let kim = {
+    //   a : "김씨1",
+    //   b : "김씨2",
+    //   c : "김씨3",
+    //   d : "김씨4",
+    //   e : "김씨5"
+    // };
+    // console.log(kim);
+    // let root= document.getElementById("root");
+    // console.dir(root);
+    //--------------------------------------------------------
+    
+    
+    // 객체의 사람관점에서 편함-----------------------------------
+    // let itsMe = { //itsMe라는 객체는 4개의 키를 가지고 있고 각 키는 속성을 가지고 있습니다
+    //   1: "kwakyounho",
+    //   2: 20,
+    //   3: "developer",
+    //   4: "Daejeon",
+      // sibling: "brother",
+      // favoriteGame: "story",
+      // favroiteFood: "gogi",
+      // height: 171+"cm",
+      // hobby: { //객체 안의 객체
+      //   first: "coding",
+      //   second: "bookreading"
+      // }
+    // }
+
+    // console.log(itsMe.name);
+    // console.log(itsMe["name"]);
+    // console.log(itsMe["age"]);
+    // console.log(itsMe.home);
+
+    // console.log(itsMe.hobby.first);
+    // console.log(itsMe["hobby"]["first"]);
+    // console.log(itsMe.hobby["first"]); //섞어써도 됩니다
+
+    // console.log(itsMe[1])
+    // console.log(itsMe.1) // 이건 왜 안될까?
+
+    // console.log(typeof(itsMe))
+
+  //   let itsMe = [
+  //     "kwakyounho",
+  //     20,
+  //     "developer",
+  //     "Daejeon",
+  // ]
+  //   console.dir(itsMe);
+  //   console.log(itsMe.length);
+  //   console.log(itsMe["length"]);
+
+
+  // 커피 만들기 연습 -----------------------------------------
+    let coffee = ["coffeMachine","inoutMoney","waitng","getCoffee","drinking"]
+    let goStudy = ["wakeUp","washingBody","putBag","outHome","waitngBus","putOnBus","putDownBus","walking","finish"]
+    let forStudy = {
+      10 : "computer",
+      11 : "pocus",
+      12 : "relex",
+      13 : "goodMonitor"
+    }
+    let makeCake = {
+      ready : {jubsi:"circle", JJal:"Jumoney"},
+      make : ["얹기","바르기","펴기","올리기","굳히기"],
+      decoration : {top:"딸기",center:"peanut",bottom:"crean"}
+    }
+    console.log(coffee[4]);
+    console.dir(forStudy[11]);
+    console.dir(makeCake);
+    //------------------------------------------------------
+
+    
+  </script>
+</body>
+</html>

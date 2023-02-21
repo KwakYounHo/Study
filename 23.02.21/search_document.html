@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root > div:nth-child(1) {
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div>첫번째</div>
+    <div>두번째</div>
+    <div>세번째</div>
+  </div>
+  <script>
+    let root;
+    root = document;
+
+    console.log(typeof(root));
+
+    let a = root.getElementById('root')
+
+    console.log(a.children[0]);
+    let as = a.children[1].style
+    as.color='red';
+    as.fontSize='100px';
+    as.height='200px';
+    // as.backgroundColor='blue';
+    as.boxSizing='border-box';
+    as.display='flex';
+    console.dir(a.children[1]);
+  </script>
+</body>
+</html>
