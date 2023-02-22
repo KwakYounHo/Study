@@ -42,7 +42,7 @@
     C_h1.textContent = "특정 시간에 무엇을 했는지";
     document.getElementsByClassName("first_div")[0].appendChild(C_h1);
 
-    // 버튼 생성 변수
+    // 버튼 선택 변수
     let button = document.getElementsByTagName("input")
 
     // myDay에 key의 갯수 만큼 버튼 만들기
@@ -61,15 +61,43 @@
     result.classList.add("result")
     root.appendChild(result);
 
-    // key 버튼을 누르면 key가 나오기
+    // Morning 버튼을 누르면 key가 나오기
     button[0].onclick = function () {
-      console.log("test text");
-      for (i=1, i<=Object.keys(myDay.Morning).length; i++;) {
-        console.log("test text");
+      count=0;
+      for (i=1; i<=Object.keys(myDay.Morning).length; i++) {
         let p = document.createElement("input");
         p.type="button";
+        p.value= Object.keys(myDay.Morning)[count];
+        p.onclick = "time"+Object.keys(myDay.Morning)[count];
+        p.classList.add("button_"+Object.keys(myDay.Morning)[count]);
         document.getElementsByClassName("result")[0].appendChild(p);
+        count++
       }
+    }
+
+    // 집에서 버튼 누르면 결과값 표시 - 버튼[3]이 정의되지 않아서 실행되지 않음
+    // button[3].onclick = function () {
+    //   let p = document.createElement("p");
+    //   p.innerText = Object.values(myDay.Morning.집에서);
+    //   document.getElementsByClassName("result")[0].appendChild[p];
+    // }
+
+    let C_form = document.createElement("form");
+    C_form.classList.add("myDayForm");
+    document.getElementsByClassName("result")[0].appendChild(C_form);
+
+    let C_select = document.createElement("select");
+    C_select.classList.add("selectTime");
+    C_select.onchange = "changeTime()"
+    document.getElementsByClassName("myDayForm")[0].appendChild(C_select);
+    
+    count=0;
+    for (i=1; i<=Object.keys(myDay).length; i++) {
+      let C_option = document.createElement("option");
+      C_option.value = Object.keys(myDay)[count];
+      C_option.innerText = Object.keys(myDay)[count];
+      count++
+      document.getElementsByClassName("selectTime")[0].appendChild(C_option);
     }
 
     // premitive value = 원시값
