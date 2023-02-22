@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <!-- <option value="abc" selected disabled>-----------</option> -->
+  <script>
+    let student = [
+      "강지민",
+      "곽윤호",
+      "권예준",
+      "김동주",
+      "김은아",
+      "김종윤",
+      "김지섭",
+      "김형진",
+      "노수민",
+      "류은이",
+      "박달재",
+      "박수연",
+      "박준형",
+      "성해경",
+      "이경택",
+      "이세민",
+      "이재권",
+      "임지성",
+      "장루빈",
+      "정성철",
+      "정지은",
+      "정희은",
+      "최대건",
+      "한유진",
+      "허진",
+    ];
+    
+    //변수 root = 영역 내 최 상단
+    let root = document.getElementById("root");
+    
+    //label 생성
+    let label = document.createElement("label");
+    label.htmlFor = "student305";
+    label.textContent = "305호 학생";
+    root.appendChild(label);
+
+    //select 태그 생성
+    let select = document.createElement("select");
+    select.id = "student305";
+    select.style.width = "100px";
+    select.addEventListener("change", changeTest)
+    root.appendChild(select);
+    
+    //"-"님의 정보
+    let h1 = document.createElement("h1");
+    root.appendChild(h1)
+    let p = document.createElement("p");
+    root.appendChild(p);
+    document.querySelector("#root > h1").style.fontSize="30px";
+    
+    //select된 사람의 이름 정보 p에 출력
+    function changeTest() {
+      let who = document.getElementById("student305").value
+      h1.textContent = '" ' + who + ' "'
+      p.textContent = "님";
+    }
+
+    //get select
+    let student305 = document.getElementById("student305");
+    
+    //selected와 disabled된 리스트 만들기
+    let dontClick = document.createElement("option");
+    dontClick.selected = "true";
+    dontClick.disabled = "true";
+    dontClick.innerText = "이름 선택---";
+    student305.appendChild(dontClick);
+    
+    //option 생성
+    for (i=0; i<student.length; i++) {
+      let option = document.createElement("option");
+      option.textContent = student[i];
+      student305.appendChild(option);
+    };
+    
+
+
+
+    
+  </script>
+</body>
+</html>
