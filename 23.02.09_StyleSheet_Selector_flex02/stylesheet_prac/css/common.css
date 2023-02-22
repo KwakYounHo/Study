@@ -1,0 +1,20 @@
+/* commom */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+/* master style */
+:root {
+  --background-color-base_1: rgb(255, 159, 159);
+  --BGC_base_2 : rgb(134, 134, 255);
+}
+
+/* test */
+div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}

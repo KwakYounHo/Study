@@ -1,0 +1,21 @@
+nav {
+  min-width:497px;
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  border: 1px solid var(--col_w);
+  border-radius:1em;
+  margin: 0.5em 0.5em;
+}
+nav > div {
+  border:1px solid black;
+  width: 125px;
+  height: 40px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+nav span {
+  font-size: 0.7em;
+  align-items: center;
+}

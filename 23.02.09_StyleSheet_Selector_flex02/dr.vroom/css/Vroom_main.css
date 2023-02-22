@@ -1,0 +1,60 @@
+      /*메인*/
+      main {
+        display: flex;
+        justify-content:center;
+        gap:0.5em;
+        padding:1em;
+        border-top: 1px solid var(--col_w);
+      }
+      .main_1_wrap {
+        width: 20vw;
+        min-width:170px;
+        padding:0.5em;
+        border: 1px solid var(--col_w);
+        border-radius: 0.2em;
+      }
+      .main_1 h1 {
+        font-size: 1.2em;
+      }
+      .main_1 ul {
+        /* list-style:none; */
+        padding:0.5em 1em 1em 0.5em;
+        border: 1px solid var(--col_w);
+        border-radius:0.2em;
+      }
+      .main_1 li {
+        padding:0.5em 0em;
+        font-size: 0.8em;
+        margin-left:1.2em;
+      }
+      .main_1 hr {
+        border: 1px dashed var(--col_w);
+        margin: 0.5em 0em;
+      }
+      .main_2 {
+        width: 50vw;
+        min-width: 450px;
+        /*height: 500px;*/
+        border: 1px solid var(--col_b);
+        border-radius:0.5em;
+        padding:2%;
+        border: 1px solid var(--col_w);
+        border-radius: 0.2em;
+        font-size: var(--mas_f);
+      }
+      .main_2 p {
+        font-size: 1.2em;
+      }
+      .main_2 h1 {
+        font-size: 2.5em;
+        margin:1em 1em 1em 0;
+      }
+      .main_2 ul {
+        padding-left: 2em;
+        font-size: 1.2em;
+      }
+      .main_2 li {
+        list-style: circle;
+        padding: 0.1em;
+      }
+  

@@ -1,0 +1,195 @@
+/*--------------------PC버전--------------------*/
+@media screen and (min-width:601px){
+  /*레이아웃 지정*/
+  body {
+    width: 1080px;
+    height: 1920px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  header {
+    width:100%;
+    height: 10%;
+    background-color: var(--h_color);
+  }
+  nav {
+    width: 100%;
+    height: 2%;
+    background-color: var(--n_color);
+  }
+  main {
+    width:100%;
+    height: 80%;
+    background-color: var(--m_color);
+  }
+  footer {
+    width: 100%;
+    height: 8%;
+    background-color: var(--f_color);
+  }
+  
+  /*---------------모바일 메뉴 없애기---------------*/
+  #h_mobile {
+    display: none;
+  }
+  #n_mobile {
+    display: none;
+  }
+
+  
+  
+  
+  /*----------------헤더----------------*/
+  #h_desk_top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+  }
+  #h_desk_top > div:nth-child(1) {/*로고*/
+    width: 20%;
+    height: 60%;
+    display: inherit;
+    justify-content: flex-end;
+  }
+  #h_desk_top > div:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  #h_desk_top > div:nth-child(2) {/*검색창*/
+    width: 60%;
+    height: 60%;
+    border: 1px solid black;
+  }
+  #h_desk_top > div:nth-child(2) h1 {
+    margin: 0px;
+  }
+  #h_desk_top > div:nth-child(2) > a {
+    font-size: 3em;
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  #h_desk_top > div:nth-child(3) {/*광고*/
+    width: 20%;
+    height: 60%;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+  }
+  #h_desk_top > div:nth-child(3) > div {
+    width: 75%;
+    height: 75%;
+    border: 1px solid black;
+  }
+  
+  /*----------------네비----------------*/
+  #n_desk_top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+  }
+  #n_desk_top > div:nth-child(1) {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  #n_desk_top > div:nth-child(1) a {
+    text-decoration: none;
+    color: black;
+  }
+  #n_desk_top > div:nth-child(2) {
+    width: 10%;
+    height: 90%;
+    border: 1px solid black;
+  }
+
+
+
+  /*---메인---*/
+  #container /*wrapper*/ {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+  }
+  #container > div:nth-child(1) { /*메인의 첫 번째 컨텐츠*/
+    width : 50%;
+    height: 90%;
+    /* border: 1px solid black; */
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #container > div:nth-child(2) { /*메인의 두 번째 컨텐츠*/
+    width: 35%;
+    height: 90%;
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* 메인 첫 번째 컨텐츠 속 div*/
+  #container > div:nth-child(1) > div {
+    border: 1px solid black;
+  }
+  #container > div:nth-child(1) > div:nth-child(1) {
+    width: 100%;
+    height: 15%;
+  }
+  #container > div:nth-child(1) > div:nth-child(2) {
+    width: 100%;
+    height: 15%;
+  }
+  #container > div:nth-child(1) > div:nth-child(3) {
+    width: 100%;
+    height: 15%;
+  }
+  #container > div:nth-child(1) > div:nth-child(4) {
+    width: 100%;
+    height: 15%;
+  }
+  #container > div:nth-child(1) > div:nth-child(5) {
+    width: 100%;
+    height: 15%;
+  }
+  
+  /*메인 두 번째 컨텐츠 속 div*/
+  #container > div:nth-child(2) > div {
+    border: 1px solid black;
+  }      
+    #container > div:nth-child(2) > div:nth-child(1) {
+    width: 100%;
+    height: 20%;
+  }
+  #container > div:nth-child(2) > div:nth-child(2) {
+    width: 100%;
+    height: 10%;
+  }
+  #container > div:nth-child(2) > div:nth-child(3) {
+    width: 100%;
+    height: 50%;
+  }
+  #container > div:nth-child(2) > div:nth-child(4) {
+    width: 100%;
+    height: 10%;
+  }
+  #container > div:nth-child(2) > div:nth-child(5) {
+    width: 100%;
+    height: 5%;
+  }
+}
