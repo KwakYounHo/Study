@@ -16,8 +16,8 @@
   </ul>
   <script>
     let menu = window.document.getElementById("menu");
-    console.dir(menu);
-    console.log(menu.children);
+    console.dir(menu); //구조를 먼저 보는 것이 훨씬 중요하다.
+    console.log(menu.children); //리턴이 배열
     //다른 접근 방법--------------------------------------
     /*
     let menu2 = document.getElementsByTagName("ul");
@@ -27,6 +27,27 @@
    //----------------------------------------------------
     console.log(menu.children[0]);
     //검증 완료 -----------------------------------------
+    console.dir(menu.children[0].style);
+
+    /*
+    for (let index = 0; index < menu.children.length; index++) {
+      if(menu.children[index].textContent !== "item_3") {
+        menu.children[index].style.color = "red";
+      } else {
+        menu.children[index].style.color = "blue";
+      }
+    }
+    */
+
+   //인덱스가 2가 아니라면 백그라운드 적용
+   //인덱스가 2라면 참
+    for (let index = 0; index < menu.children.length; index++) {
+      if(index === 2) {
+        menu.children[index].style.color = "red";
+      } else {
+        menu.children[index].style.backgroundColor = "blue";
+      }
+    }
   </script>
 </body>
 </html>
