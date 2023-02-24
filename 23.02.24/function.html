@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let me = 1; // 메모리를 확보했다.
+    console.log(me);
+    me = "가나다"
+    console.log(me);
+
+    function valueChange(first, second, third) {
+      if (typeof(first) === "string") {
+        if(typeof(second) === "string") {
+          if(typeof(third) === "string") {
+            return first + second + third; // return -> 돌려 주었다.
+          }
+        }
+      }
+    }
+
+    me = valueChange(1,2,31); // 불렀을 때 반응 하는 것을 개발자들은 return이라고 합니다.
+
+    console.log(me)
+
+  </script>
+</body>
+</html>
